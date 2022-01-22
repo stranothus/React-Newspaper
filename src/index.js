@@ -1,7 +1,7 @@
 import ReactDOM, { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
-import Home from "./pages/Home";
+import Home from "./pages/home/index";
 import About from "./pages/About";
 import News from "./pages/News";
 import Staff from "./pages/Staff";
