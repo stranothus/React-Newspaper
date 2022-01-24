@@ -1,6 +1,6 @@
 import React from "react";
 import NavLink from "../NavLink";
-import "./style.css";
+import "./style.scss";
 
 class NavBar extends React.Component {
     render() {

@@ -1,0 +1,39 @@
+@import "../../global.scss";
+
+li {
+    flex-basis: 100%;
+    
+    a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        position: relative;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+        background-color: #00000000;
+        transition: 0.25s all;
+        font-family: $font-alt;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+    a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 3px;
+        background-color: #000000;
+        transition: 0.25s all;
+    }
+    a:hover {
+        background-color: #00000030;
+        transition: 0.25s all;
+    }
+    a:hover::after {
+        left: 0;
+        width: 100%;
+        transition: 0.25s all;
+    }
+}
