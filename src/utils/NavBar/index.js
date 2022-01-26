@@ -6,7 +6,7 @@ import "./style.scss";
 class NavBar extends React.Component {
     render() {
         return (
-            <ul>
+            <ul className="navbar">
                 <NavTitle>Ka News</NavTitle>
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/about">About</NavLink>
