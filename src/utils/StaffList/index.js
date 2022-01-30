@@ -5,7 +5,7 @@ import "./style.scss";
 class StaffList extends React.Component {
     render() {
         return (
-            <ul>
+            <ul className="staff-list">
                 {this.props.staff.map((v, i) => <StaffCard key={i}>{v}</StaffCard>)}
             </ul>
         );
