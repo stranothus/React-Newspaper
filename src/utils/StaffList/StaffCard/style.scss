@@ -1,0 +1,78 @@
+@import "../../../global.scss";
+
+.staff-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    background-color: $bg-1;
+    margin: 75px 50px;
+    padding: 175px 10px 50px;
+    box-shadow: 0 2px 5px #00000050;
+    transition: 0.3s all;
+
+    .logo {
+        position: absolute;
+        top: -50px;
+        left: 0px;
+        display: block;
+        transform: rotate(15deg) scale(0.5);
+
+        > * {
+            stroke: $accent-3;
+            fill: transparent;
+            stroke-width: 1.5px;
+        }
+
+        text {
+            fill: $accent-3;
+            font-family: $font-title;
+        }
+    }
+
+    .img-outline {
+        position: absolute;
+        top: 187px;
+        left: 0;
+        display: block;
+        width: 320px;
+
+        * {
+            fill: $accent-3;
+        }
+    }
+
+    img {
+        width: 100px;
+    }
+
+    hgroup {
+        margin: 25px 0;
+        text-align: center;
+
+        h3 {
+            font-family: $font-alt;
+            font-size: 1.2rem;
+        }
+
+        h4 {
+            font-family: $font-main;
+            font-style: italic;
+            font-size: 1rem;
+        }
+    }
+
+    p {
+        margin: 0 10px;
+        text-align: center;
+        font-family: $font-main;
+    }
+}
+
+.staff-card:hover {
+    box-shadow: 0 5px 10px #000000A0;
+    cursor: pointer;
+    transition: 0.3s all;
+}
