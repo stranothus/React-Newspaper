@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import NavBar from "../utils/NavBar/index";
+import Footer from "../utils/Footer/index";
 
 class Layout extends React.Component {
     render() {
@@ -8,6 +9,7 @@ class Layout extends React.Component {
             <>
                 <NavBar />
                 <Outlet />
+                <Footer></Footer>
             </>
         )
     }

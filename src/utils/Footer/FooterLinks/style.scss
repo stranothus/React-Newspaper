@@ -1,0 +1,26 @@
+@import "../../../global.scss";
+
+li.footer-link {
+    flex-basis: 100%;
+    width: 50%;
+    
+    a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        position: relative;
+        padding: 10px 0;
+        text-align: center;
+        background-color: #00000000;
+        transition: 0.2s all;
+        font-family: $font-alt;
+        font-weight: 700;
+        font-size: 0.9rem;
+        white-space: nowrap;
+        border-radius: 15px;
+    }
+    a:hover {
+        background-color: #00000030;
+        transition: 0.2s all;
+    }
+}

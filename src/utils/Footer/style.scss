@@ -1,0 +1,16 @@
+@import "../../global.scss";
+
+footer {
+    padding: 25px 10vw;
+    background: linear-gradient(-.45turn, $accent-1, $accent-2);
+
+
+    #footer-sections {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+    }
+}
