@@ -67,7 +67,7 @@ class StaffCard extends React.Component {
                         h -38
                         Z" transform="translate(100 0) scale(-1 1)" ></path>
                 </svg>
-                <img src={v.image}></img>
+                <img src={v.image} alt={v.image}></img>
                 <hgroup>
                     <h3>{v.name}</h3>
                     <h4>{v.position}</h4>

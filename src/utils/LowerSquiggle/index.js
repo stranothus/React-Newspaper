@@ -15,14 +15,17 @@ class LowerSquiggle extends React.Component {
                             <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3"></feGaussianBlur>
                             <feBlend in="SourceGraphic" in2="blurOut" mode="normal"></feBlend>
                         </filter>
+                        <path id="double-wave" filter="url(#filter1)" d="
+                            M 0 50
+                            C 40 10, 60 10, 100 50 C 140 90, 160 90, 200 50
+                            C 240 10, 260 10, 300 50 C 340 90, 360 90, 400 50
+                            L 400 100 L 0 100 Z" />
                     </defs>
-                    <path d="
-                        M 500 15
-                        c 0 0 -150 10 -250 -2.5
-                        c 0 0 -100 -12.5 -250 -2.5
-                        l 0 -10
-                        l 500 0
-                        Z" filter="url(#filter1)"></path>
+
+                    <use href="#double-wave" x="0" y="0" transform="scale(2.5 -0.2) translate(0 -100)">
+                        <animate attributeName="x" from="0" to="-200" dur="4s"
+                                repeatCount="indefinite"></animate>
+                    </use>
                 </svg>
             </div>
         );
