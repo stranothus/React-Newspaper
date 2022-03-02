@@ -1,0 +1,21 @@
+@import "../../global.scss";
+
+.content {
+    margin: 50px 10vw;
+
+    h2 {
+        margin : 0 0 15px;
+        font-family : $font-alt;
+        font-size : 1.4rem;
+        letter-spacing : 1px;
+        color : #000000;
+    }
+
+    p {
+        margin : 25px 0;
+        font-family : $font-main;
+        font-size : 1.1rem;
+        line-height : 1.6;
+        color : #000000;
+    }
+}
